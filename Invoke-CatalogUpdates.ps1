@@ -7,11 +7,7 @@ function New-OSDCatalog {
         #   Both Tabs
         #===================================================================================================
         [string]$WsusServer = $env:COMPUTERNAME,
-        [string]$CatalogName,
 
-        [ValidateSet('Internet', 'WSUS')]
-        [string]$DownloadUri,
-        [switch]$GridViewGetUpdates,
         [switch]$GridViewResults,
         [string]$SaveDirectory,
         [string]$WsusPort = '8530'
