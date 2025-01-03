@@ -2,18 +2,15 @@
 This script allows you to create your own Catalog Updates for [OSD]([OSD PowerShell Module | OSD](https://osd.osdeploy.com/)) for Windows 10/11 and Windows Server. 
 
 ## Requirements
----
 - OSD Powershell module needs to be installed locally
 - A WSUS instance with the update metadata for the operating systems you like to create catalogs for
 - Script cannot run on PowerShell Core 7. It requires Windows Powershell. (PowerShell Core cannot connect to WSUS)
 - Requires to be ran as Administrator
 ## Syntax
----
 ```
 .\Invoke-CatalogUpdates.ps1 [-WsusServer <String>] [-WsusPort <String>] [-SaveDirectory <String>] [-GridViewResults] [<CommonParameters>]
 ```
 ## Parameters
----
 ### -WsusServer
 
 Specifies the address to the WSUS instance. When not set it defaults to the computer's name
